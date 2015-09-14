@@ -98,7 +98,6 @@
     "android": "./project/bin/check_android.js"
   },
   "plugins": {
-    "cordova-plugin-splashscreen": "cordova-plugin-splashscreen@1.0.0",
     "cordova-plugin-whitelist": "cordova-plugin-whitelist@1.0.0"
   }
 }
