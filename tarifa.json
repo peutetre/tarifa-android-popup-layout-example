@@ -42,7 +42,7 @@
       "BackgroundColor": "0xffffffff",
       "AutoHideSplashScreen": false,
       "KeepRunning": true,
-      "Orientation": "portrait"
+      "Orientation": "landscape"
     },
     "whitelist": {
       "shared": [

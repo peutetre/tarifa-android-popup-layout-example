@@ -13,7 +13,8 @@ module.exports = function (msg) {
             defer.reject(err);
         }
         else {
-            result.manifest.application[0].$['android:theme'] = "@android:style/Theme.Dialog";
+            // result.manifest.application[0].$['android:theme'] = "@android:style/Theme.Dialog";
+            result.manifest.application[0].$['android:theme'] = "@android:style/Theme.Holo.Dialog.NoActionBar";
             delete result.manifest.application[0].activity[0].$['android:theme'];
             var builder = new xml2js.Builder({
                 renderOpts: { pretty: true, indent: '    ', newline: '\n' },
