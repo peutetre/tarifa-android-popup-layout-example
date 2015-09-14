@@ -1,0 +1,104 @@
+{
+  "name": "PopUpExample",
+  "id": "com.loops.example",
+  "description": "",
+  "version": "0.0.0",
+  "platforms": [
+    "android@4.0.2"
+  ],
+  "configurations": {
+    "android": {
+      "default": {
+        "id": "com.loops.example.init",
+        "product_name": "PopUpExample_init",
+        "product_file_name": "PopUpExample_init"
+      },
+      "dev": {
+        "id": "com.loops.example.dev",
+        "product_name": "PopUpExample_dev",
+        "product_file_name": "PopUpExample_dev"
+      },
+      "stage": {
+        "id": "com.loops.example.stage",
+        "product_name": "PopUpExample_stage",
+        "product_file_name": "PopUpExample_stage",
+        "release": true
+      },
+      "prod": {
+        "id": "com.loops.example.prod",
+        "product_name": "PopUpExample_prod",
+        "product_file_name": "PopUpExample_prod",
+        "release": true
+      }
+    }
+  },
+  "cordova": {
+    "preferences": {
+      "DisallowOverscroll": true,
+      "EnableViewportScale": false,
+      "KeyboardDisplayRequiresUserAction": false,
+      "ShowSplashScreenSpinner": false,
+      "SplashScreen": "screen",
+      "BackgroundColor": "0xffffffff",
+      "AutoHideSplashScreen": false,
+      "KeepRunning": true,
+      "Orientation": "portrait"
+    },
+    "whitelist": {
+      "shared": [
+        {
+          "type": "access-origin",
+          "origin": [
+            "*"
+          ]
+        },
+        {
+          "type": "allow-intent",
+          "origin": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*"
+          ]
+        }
+      ],
+      "android": [
+        {
+          "type": "allow-intent",
+          "origin": [
+            "market:*"
+          ]
+        },
+        {
+          "type": "allow-navigation",
+          "origin": [
+            "*"
+          ]
+        }
+      ],
+      "ios": [
+        {
+          "type": "allow-intent",
+          "origin": [
+            "itms:*",
+            "itms-apps:*"
+          ]
+        }
+      ]
+    }
+  },
+  "author": {
+    "name": "Paul Panserrieu",
+    "email": "paul@42loops.com",
+    "href": "http://42loops.com"
+  },
+  "check": {
+    "android": "./project/bin/check_android.js"
+  },
+  "plugins": {
+    "cordova-plugin-splashscreen": "cordova-plugin-splashscreen@1.0.0",
+    "cordova-plugin-whitelist": "cordova-plugin-whitelist@1.0.0"
+  }
+}
