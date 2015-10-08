@@ -4,7 +4,8 @@
   "description": "",
   "version": "0.0.0",
   "platforms": [
-    "android@4.0.2"
+    "android@4.0.2",
+    "browser@4.0.0"
   ],
   "configurations": {
     "android": {
@@ -12,6 +13,30 @@
         "id": "com.loops.example.init",
         "product_name": "PopUpExample_init",
         "product_file_name": "PopUpExample_init"
+      }
+    },
+    "browser": {
+      "default": {
+        "id": "com.loops.example.init",
+        "product_name": "PopUpExample_init",
+        "product_file_name": "PopUpExample_init"
+      },
+      "dev": {
+        "id": "com.loops.example.dev",
+        "product_name": "PopUpExample_dev",
+        "product_file_name": "PopUpExample_dev"
+      },
+      "stage": {
+        "id": "com.loops.example.stage",
+        "product_name": "PopUpExample_stage",
+        "product_file_name": "PopUpExample_stage",
+        "release": true
+      },
+      "prod": {
+        "id": "com.loops.example.prod",
+        "product_name": "PopUpExample_prod",
+        "product_file_name": "PopUpExample_prod",
+        "release": true
       }
     }
   },
